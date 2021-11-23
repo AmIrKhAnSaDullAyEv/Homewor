@@ -1,0 +1,209 @@
+@media(prefers-color-scheme: dark) {
+    :root {
+        --primary-background: #0C0C0C;
+    }
+
+    body {
+        background: var(--black-color);
+    }
+
+    .header__prenav {
+        background: var(--primary-background);
+    }
+
+    .header__nav-logo::before {
+        content: url('../images/logo-dark.png');
+    }
+    
+    .header__nav-logo img {
+        display: none;
+    }
+
+    .header__nav-input {
+        color: var(--secondary-color);
+        background: none;
+    }
+
+    .header__nav-btn {
+        background: none;
+        border: 1px solid var(--secondary-color);
+    }
+    
+    .header__nav-form {
+        border: 1px solid var(--secondary-color);
+    }
+
+    .header__list-link {
+        color: var(--secondary-color);
+    }
+    
+    .header__list-link:hover {
+        color: var(--secondary-color);
+    }
+
+    .header__list-menu {
+        background: var(--primary-background);
+    }
+
+    .header__list-menu::before {
+        background: var(--secondary-color);
+    }
+
+    .header__list-title {
+        color: var(--secondary-color);
+    }
+
+    .header__list-description {
+        color: var(--secondary-color);
+    }
+
+    .header__content-title {
+        color: var(--secondary-color);
+    }
+
+    .header__content-link {
+        background: none;
+        border: 1px solid var(--secondary-color);
+    }
+
+    .carousel-indicators [data-bs-target].active {
+        background: var(--secondary-color);
+    }
+
+    .header__prenav-menu {
+        background: var(--primary-background);
+    }
+
+    .header__prenav-link {
+        color: var(--secondary-color);
+    }
+    
+    .main__about-link {
+        background: none;
+        border: 1px solid var(--secondary-color);
+        color: var(--secondary-color);
+    }
+
+    .main__cellphone-title {
+        color: var(--secondary-color);
+    }
+
+    .main__cellphone-text {
+        color: var(--secondary-color);
+    }
+
+    .main__cellphone-link, .main__about-link, .main__playstation-link {
+        background: none;
+        border: 1px solid var(--secondary-color);
+    }
+
+    .main__cellphone-icon {
+        color: var(--secondary-color);
+    }
+
+    .main__cellphone-item:hover {
+        box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.25);
+    }
+
+    .main__playstation-logo::before {
+        content: url('../images/logo-PS5-dark.png');
+    }
+
+    .main__playstation-title {
+        color: var(--secondary-color);
+    }
+
+    .footer {
+        background: var(--primary-background);
+    }
+}
+
+@media(max-width: 991px) {
+    .main__about-left {
+        margin-bottom: 30px;
+    }
+    
+    .main__about-right {
+        grid-gap: 30px;
+    }
+    
+    .header__content-items {
+        flex-wrap: wrap;
+    }
+    
+    .header__content-indicators {
+        bottom: -60px;
+    }
+
+    .main__playstation-content {
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+
+    .footer__contant {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer__content-item {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width: 767px) {
+    .header__nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .header__nav-form {
+        margin: 30px 0 20px 0;
+    }
+    
+    .header__prenav-info {
+        justify-content: center !important;
+    }
+    
+    .title_1 {
+        left: 75%;
+    }
+
+    .main__cellphone-items {
+        flex-direction: column;
+    }
+
+    .main__cellphone-img {
+        max-width: 50% !important;
+        width: 100%;
+    }
+
+    .footer__content-form {
+        margin: 0;
+    }
+}
+
+@media(max-width: 515px) {
+    .header__prenav-menu {
+        margin-top: 46px !important;
+    }
+
+    .main__cellphone-title {
+        font-size: 30px;
+    }
+
+    .footer__content-item {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media(max-width: 320px) {
+    .header__prenav-menu {
+        margin-top: 73px !important;
+    }
+    
+    .title_1 {
+        left: 70%;
+    }
+}
